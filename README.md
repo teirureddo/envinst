@@ -8,8 +8,14 @@
 
 **PHP7**:
 
+用法
 ```
-sudo bash phpinst.sh
+sudo bash phpinst.sh 网站目录正则
+```
+
+示例
+```
+sudo bash phpinst.sh \/home\/username\/workspace\/public
 ```
 
 ----

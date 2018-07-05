@@ -1,7 +1,12 @@
 #!/bin/bash
 
-#[配置]网站目录正则
-instwww="\/home\/cabox\/workspace\/public"
+#设置网站目录正则
+if [ $1 ]
+then
+    instwww=$1
+else
+    instwww="\/home\/$USER\/workspace\/public"
+fi
 
 echo "初始化中..."
 sudo apt-get update
