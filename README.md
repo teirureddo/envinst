@@ -10,12 +10,12 @@
 
 用法
 ```
-sudo bash phpinst.sh 网站目录正则
+sudo bash phpinst.sh "网站目录正则"
 ```
 
 示例
 ```
-sudo bash phpinst.sh \/home\/username\/workspace\/public
+sudo bash phpinst.sh "\/home\/username\/workspace\/public"
 ```
 
 ----
