@@ -6,16 +6,18 @@
 
 ## 使用方法
 
-**PHP7**:
+#### PHP7:
 
-用法
+默认网站目录 (脚本执行目录/public)
 ```
-sudo bash phpinst.sh "网站目录正则"
+mkdir public
+wget https://github.com/teirureddo/envinst/raw/master/phpinst.sh
+sudo bash phpinst.sh
 ```
-
-示例
+自定义网站目录
 ```
-sudo bash phpinst.sh "\/home\/username\/workspace\/public"
+wget https://github.com/teirureddo/envinst/raw/master/phpinst.sh
+sudo bash phpinst.sh "网站目录"
 ```
 
 ----

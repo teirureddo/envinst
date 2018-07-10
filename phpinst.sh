@@ -1,14 +1,16 @@
 #!/bin/bash
 
-#设置网站目录正则
+#设置网站目录
 if [ $1 ]
 then
     instwww=$1
 else
-    instwww="\/home\/$USER\/workspace\/public"
+    instwww=$(dirname $(readlink -f $0)) #取脚本目录
+    instwww=${instwww}"/public"
 fi
 
-echo "初始化中..."
+echo "初始化中... (网站目录: ${instwww})"
+instwww=${instwww//\//\\\/} #替换斜杠
 sudo apt-get update
 sudo apt-get install -y --no-install-recommends unzip #兼容CWI
 sudo apt-get install bsdutils -y #兼容CAW
